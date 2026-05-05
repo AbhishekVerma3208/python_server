@@ -19,7 +19,9 @@ app = Flask(__name__)
 CORS(app, origins=[
     'http://localhost:3000',
     'http://172.23.2.8:3000',
-    'http://127.0.0.1:3000'
+    'http://127.0.0.1:3000',
+    'https://newschatbotapp.web.app',
+    'https://newschatbotapp.firebaseapp.com'
 ], supports_credentials=True, allow_headers=['Content-Type', 'Authorization'])
 
 # Initialize all components
