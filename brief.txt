@@ -1,0 +1,97 @@
+1️⃣ app.py (Main Backend Server)
+
+Ye project ka main Flask server hai.
+
+Working:
+
+React / Node se API requests receive karta hai
+
+User ka message NLP processor ko bhejta hai
+
+Fir News API se news fetch karta hai
+
+Aur JSON response frontend ko send karta hai
+
+Example:
+
+User → React → Node → Python(app.py)
+                        ↓
+                    NLP Analysis
+                        ↓
+                   News API
+                        ↓
+                 Response (Articles)
+
+2️⃣ config.py (Application Settings)
+
+Ye file project ki configuration store karti hai.
+
+Isme hota hai:
+
+API keys (NewsAPI key)
+
+Server port
+
+CORS origins
+
+News categories
+
+Country codes
+
+Error messages
+
+Example:
+
+Technology → AI, software, coding
+Sports → football, cricket, match
+India → delhi, mumbai
+
+
+Matlab query match karne ke rules yaha defined hain.
+
+3️⃣ news_api.py (News Fetching Service)
+
+Ye file NewsAPI.org se news laane ka kaam karti hai.
+
+Functions:
+
+get_top_headlines()
+
+search_news()
+
+get_category_news()
+
+get_country_news()
+
+Example:
+
+User: AI news
+
+Python → NewsAPI.org
+          ↓
+     AI related articles
+
+4️⃣ nlp_processor.py (Query Understanding)
+
+Ye file user ka message analyze karti hai.
+
+Ye identify karti hai:
+
+Category (tech / sports / business)
+
+Country (India / US / UK)
+
+Keywords
+
+Example:
+
+User Message:
+"Latest AI news in India"
+
+NLP Output:
+{
+category: "technology"
+country: "in"
+keywords: "AI"
+}
+
